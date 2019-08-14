@@ -97,38 +97,15 @@ function App() {
   }
   return (
     <Fragment>
-       <TextField
-        id="standard-uncontrolled"
-        label="First Name"
-        defaultValue=""
-        className={classes.textField}
-        margin="normal"
-      />
-  <div className={classes.root}>
-      <div className={classes.wrapper}>
-        <Fab
-          aria-label="save"
-          color="primary"
-          className={buttonClassname}
-          onClick={handleButtonClick}
-        >
-          {/* {success ? <CheckIcon /> : <SaveIcon />} */}
-        </Fab>
-        {loading && <CircularProgress size={68} className={classes.fabProgress} />}
-      </div>
-      <div className={classes.wrapper}>
-        <Button
-          variant="contained"
-          color="primary"
-          className={buttonClassname}
-          disabled={loading}
-          onClick={handleButtonClick}
-        >
-          Accept terms
-        </Button>
-        {loading && <CircularProgress size={24} className={classes.buttonProgress} />}
-      </div>
-    </div>
+       <body>
+        <div className="container">
+          <div className="row">
+            <div className="col-md">
+              <h2>Hello World !</h2>
+            </div>
+          </div>
+        </div>
+       </body>
     </Fragment>
   );
 }
